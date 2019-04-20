@@ -8,16 +8,30 @@ var jinxAudio = {
   "R": new Audio('sounds/079_jinx_base_r_oc_01.wav')
 };
 
-var last=null;
+var last = null;
+
 
 window.onkeyup = function(event) {
   var keyPressed = event.key.toUpperCase();
+  makesound(keyPressed);
 
+}
+
+
+$(".drum").toArray().forEach(function(value, ind) {
+  value.addEventListener("click", function() {
+  var keyClicked = value.innerText.toUpperCase();
+  makesound(keyClicked);
+  });
+})
+
+function makesound(keyPressed){
   if (jinxAudio[keyPressed]) {
-    if(last){last.pause();
-    last.currentTime = 0;}
+    if (last) {
+      last.pause();
+      last.currentTime = 0;
+    }
     jinxAudio[keyPressed].play();
-    last=jinxAudio[keyPressed];
+    last = jinxAudio[keyPressed];
   }
-
 }
