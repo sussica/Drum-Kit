@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #009f9d;
 }
 
 h1 {
@@ -16,32 +16,41 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
 
+.z {
+ background-image: url("photos/jinx1.jpg");
+ background-size: 170px;
 }
 
-.a {
-
+.x {
+  background-image: url("photos/jinx2.png");
+  background-size: 170px;
 }
 
 .s {
-
+  background-image: url("photos/jinx3.jpg");
+  background-size: 170px;
 }
 
-.d {
-
+.q {
+  background-image: url("photos/jinx4.png");
+  background-size: 230px;
+  background-position: right;
 }
 
-.j {
-
+.w {
+  background-image: url("photos/jinx5.png");
+  background-size: 230px;
 }
 
-.k {
-
+.e {
+  background-image: url("photos/jinx6.jpg");
+  background-size: 170px;
 }
 
-.l {
-
+.r {
+  background-image: url("photos/jinx7.jpg");
+  background-size: 170px;
 }
 
 .set {
